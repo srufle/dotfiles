@@ -5,8 +5,10 @@ set nu
 set list
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,space:.
 
-" Shortcut to rapidly toggle `set list`, shortcut \l
+" Shortcut to rapidly toggle `set list`, shortcut "\l"
 nmap <leader>l :set list!<CR>
+" Shortcut to format JSON, shortcut "\fj"
+nmap <leader>fj :%!python -m json.tool
 
 " Enable syntax highlighting.
 syntax on
